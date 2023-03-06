@@ -1,9 +1,14 @@
 class testmod {
 
 file { '/tmp/file1':
-  ensure  => file,
+  ensure  => present,
   content => 'Hello testmod',
   noop    => false,
+}
+
+service { 'chronyd.service' :
+  ensure => stopped,
+  enable => true,
 }
 
 }
