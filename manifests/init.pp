@@ -9,7 +9,7 @@ file { '/tmp/file1':
 
 service { 'chronyd.service' :
   ensure => stopped,
-  enable => true,
+  enable => false,
 }
 
 }
