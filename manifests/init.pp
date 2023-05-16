@@ -8,8 +8,8 @@ file { '/tmp/file1':
 }
 
 service { 'chronyd.service' :
-  ensure => stopped,
-  enable => false,
+  ensure => running,
+  enable => true,
 }
 
 }
