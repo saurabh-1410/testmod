@@ -1,3 +1,4 @@
+#testing feature_test
 class testmod {
 
 file { '/tmp/file1':
