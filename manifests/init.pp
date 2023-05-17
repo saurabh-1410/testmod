@@ -1,6 +1,5 @@
 #testing feature_test
 class testmod {
-
 file { '/tmp/file1':
   ensure  => present,
   content => 'Hello testmod',
@@ -10,6 +9,5 @@ file { '/tmp/file1':
 service { 'chronyd.service' :
   ensure => running,
   enable => true,
-}
-
+  }
 }
