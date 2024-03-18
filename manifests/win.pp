@@ -5,4 +5,11 @@ class testmod::win {
         provider    => powershell,
         logoutput   => true,
     }
+
+  exec { 'join_domain':
+        environment => [ "Password=${_password}" ],
+        command   => 'exit 1',
+        unless   => 'if((Get-WmiObject -Class Win32_ComputerSystem).domain -ne ${domain}){exit 1}',
+        provider  => powershell,
+       }
 }
