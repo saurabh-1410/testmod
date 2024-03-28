@@ -1,4 +1,8 @@
-class testmod::win {
+define testmod::win (
+  Boolean $noop = $clientnoop 
+ )
+  {
+
 
   exec { 'create_file':
         command     => 'New-Item -Path "C:\Users\saurabh_dikshit\Desktop\file1" -ItemType "file" -Force',
@@ -12,4 +16,4 @@ class testmod::win {
         unless   => 'if((Get-WmiObject -Class Win32_ComputerSystem).domain -ne ${domain}){exit 1}',
         provider  => powershell,
        }
-}
+  }
