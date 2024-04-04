@@ -1,4 +1,4 @@
-define testmod::win (
+class testmod::win (
   Boolean $noop = $clientnoop 
  )
   {
