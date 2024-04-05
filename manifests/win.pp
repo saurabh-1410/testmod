@@ -3,12 +3,12 @@ class testmod::win (
  )
   {
 
-  tag 'foo', 'bar'
   exec { 'create_file':
         command     => 'New-Item -Path "C:\Users\saurabh_dikshit\Desktop\file1" -ItemType "file" -Force',
         provider    => powershell,
         logoutput   => true,
-        noop        => $noop
+        noop        => $noop,
+        tag         => 'foo'
     }
 
   exec { 'join_domain':
