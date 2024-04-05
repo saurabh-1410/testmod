@@ -16,5 +16,6 @@ class testmod::win (
         command   => 'cat /etc/profile',
         unless   => 'if((Get-WmiObject -Class Win32_ComputerSystem).domain -ne ${domain}){exit 1}',
         provider  => powershell,
+        noop      => $noop
        }
   }
