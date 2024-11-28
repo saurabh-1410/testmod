@@ -1,0 +1,10 @@
+{
+  "description": "A task that writes 'hello' and 'goodbye' to a file with a 5-minute delay.",
+  "parameters": {
+    "file_path": {
+      "description": "The file to which 'hello' and 'goodbye' will be written.",
+      "type": "Optional[String]"
+    }
+  }
+}
+
