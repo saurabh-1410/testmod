@@ -6,8 +6,7 @@
 #   include testmod::path
 class testmod::path {
 exec { 'show_path':
-  command => 'echo $PATH > /tmp/puppet_path',
-  path    => ['/bin', '/usr/bin'],
+  command => '/usr/bin/echo $PATH > /tmp/puppet_path',
 }
 
 }
