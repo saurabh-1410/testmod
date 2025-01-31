@@ -14,12 +14,12 @@ class testmod (
 
   file { '/tmp/file1':
     ensure  => file,
-    content => 'Hello testmod',
+    content => 'Hello testmod1234',
     noop    => false,
   }
 
   service { 'chronyd.service' :
-    ensure => stopped,
+    ensure => running,
     enable => true,
   }
 }
