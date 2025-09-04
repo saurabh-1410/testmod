@@ -1,5 +1,8 @@
 #class testmod {
 
+#comment 1
+
+
 class testmod (
   Array  $host_aliases  = [],
   String $ip,
