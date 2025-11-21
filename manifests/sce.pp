@@ -1,6 +1,6 @@
-class profile::sce_linux {
-  notify { 'HELLO_FROM_profile::sce_linux':
-    message => 'HELLO_FROM_profile::sce_linux',
+class testmod::sce {
+  notify { 'HELLO_FROM_testmod::sce_linux':
+    message => 'HELLO_FROM::sce_linux',
   }
 
   class { '::sce_linux':
