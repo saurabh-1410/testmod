@@ -14,7 +14,7 @@ class testmod::sce {
         'ensure_the_selinux_mode_is_not_disabled',
         'ensure_selinux_policy_is_configured',
         'ensure_the_selinux_mode_is_enforcing',
-        'ensure_permissions_on_etc_crontab_are_configured',
+        'ensure_permissions_on_etccrontab_are_configured',
         'ensure_permissions_on_etc_cron_hourly_are_configured',
       ],
     }
